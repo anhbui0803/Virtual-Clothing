@@ -1,0 +1,25 @@
+# Đường dẫn tới tập dữ liệu huấn luyện, kiểm thử và nhãn
+train: ../train/images  # Đường dẫn đến ảnh huấn luyện
+val: ../valid/images    # Đường dẫn đến ảnh kiểm tra
+test: ../test/images    # Đường dẫn đến ảnh kiểm thử
+
+# Số lượng lớp (classes)
+nc: 3  # Số lớp mà bạn muốn phân đoạn, trong trường hợp này là 3
+
+# Tên của các lớp (classes)
+names: ['T_shirt', 'long_Sleeve_shirt', 'short_Sleeve_shirt']
+
+# Đường dẫn tới thư mục nhãn (labels)
+path: ../
+labels:
+  train: ../train/labels  # Đường dẫn đến nhãn cho tập huấn luyện
+  val: ../valid/labels    # Đường dẫn đến nhãn cho tập kiểm thử
+  test: ../test/labels    # Đường dẫn đến nhãn cho tập thử nghiệm
+
+
+roboflow:
+  workspace: nguyen-quang-duy
+  project: abc-eyqjr
+  version: 2
+  license: CC BY 4.0
+  url: https://universe.roboflow.com/nguyen-quang-duy/abc-eyqjr/dataset/2
